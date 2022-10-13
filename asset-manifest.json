@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/fromsoft-minibosses/static/css/main.3234c2b8.css",
+    "main.css": "/fromsoft-minibosses/static/css/main.d1b79e6a.css",
     "main.js": "/fromsoft-minibosses/static/js/main.755ff9ee.js",
-    "static/media/goldtexture.jpg": "/fromsoft-minibosses/static/media/goldtexture.421b5dd328f89735202a.jpg",
     "static/media/tobias-tullius-RhjVGxILcqE-unsplash.jpg": "/fromsoft-minibosses/static/media/tobias-tullius-RhjVGxILcqE-unsplash.a04c07c64417d7872a40.jpg",
     "static/media/urban-sprite.png": "/fromsoft-minibosses/static/media/urban-sprite.cdecf8f93039c2ff79c1.png",
     "static/media/EBGaramond-Regular.ttf": "/fromsoft-minibosses/static/media/EBGaramond-Regular.d7ae3de766c4194a8698.ttf",
@@ -13,6 +12,7 @@
     "static/media/rules.png": "/fromsoft-minibosses/static/media/rules.a6b1541bc2006feeb44d.png",
     "static/media/ttt-preview.png": "/fromsoft-minibosses/static/media/ttt-preview.ad3e1f772b739026bfc0.png",
     "static/media/ds.jpg": "/fromsoft-minibosses/static/media/ds.41fcd4e9ef8a932eab00.jpg",
+    "static/media/goldtexture.jpg": "/fromsoft-minibosses/static/media/goldtexture.84204d2469e56a9577ea.jpg",
     "static/media/etch-preview.png": "/fromsoft-minibosses/static/media/etch-preview.ca5897ca5fda9499fed2.png",
     "static/media/seppuku.png": "/fromsoft-minibosses/static/media/seppuku.b85fb4ba1f7d0fd3b8a0.png",
     "static/media/memory-preview.png": "/fromsoft-minibosses/static/media/memory-preview.e48e2fb8af48bb2ffb3a.png",
@@ -36,11 +36,11 @@
     "static/media/estus.png": "/fromsoft-minibosses/static/media/estus.b03cdbd852b492836a1a.png",
     "index.html": "/fromsoft-minibosses/index.html",
     "static/media/caret-left.svg": "/fromsoft-minibosses/static/media/caret-left.f3233daf50520a9b62350b307b470d2f.svg",
-    "main.3234c2b8.css.map": "/fromsoft-minibosses/static/css/main.3234c2b8.css.map",
+    "main.d1b79e6a.css.map": "/fromsoft-minibosses/static/css/main.d1b79e6a.css.map",
     "main.755ff9ee.js.map": "/fromsoft-minibosses/static/js/main.755ff9ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.3234c2b8.css",
+    "static/css/main.d1b79e6a.css",
     "static/js/main.755ff9ee.js"
   ]
 }
