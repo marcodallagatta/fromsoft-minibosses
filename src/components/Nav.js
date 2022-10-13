@@ -7,7 +7,7 @@ function Nav(props) {
   return (
     <div className="Nav">
       <div className="back-home">
-        <Link to="/">
+        <Link to="/fromsoft-minibosses/">
           <img src={LeftArrow} alt="Home" />
         </Link>
       </div>

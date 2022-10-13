@@ -11,13 +11,13 @@ const Home = (props) => {
         <h1>
           <span className="from-soft">From Soft</span>
           <br />
-          Minigames
+          Minibosses
         </h1>
         <div className="shadow-title">
           <p>
             <span className="from-soft">From Soft</span>
             <br />
-            Minigames
+            Minibosses
           </p>
         </div>
       </div>
@@ -29,16 +29,16 @@ const Home = (props) => {
         Get ready, these won't be children's games! <em>(sort of)</em>
       </p>
       <div className="home-links">
-        <Link to="rock-paper-scissors">
+        <Link to="/fromsoft-minibosses/rock-paper-scissors">
           <img src={rps} alt="Rock Paper Scissors" />
         </Link>
-        <Link to="memory">
+        <Link to="/fromsoft-minibosses/memory">
           <img src={mem} alt="Memory" />
         </Link>
-        <Link to="etch-a-sketch">
+        <Link to="/fromsoft-minibosses/etch-a-sketch">
           <img src={etch} alt="Etch A Sketch" />
         </Link>
-        <Link to="tic-tac-toe">
+        <Link to="/fromsoft-minibosses/tic-tac-toe">
           <img src={ttt} alt="Tic Tac Toe" />
         </Link>
       </div>

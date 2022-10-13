@@ -257,7 +257,7 @@ const TicTacToe = (props) => {
       <div className="tictactoeSplash">
         <h2>{whoWon()}</h2>
         <p>
-          <Link to="/">Go back home</Link>
+          <Link to="/fromsoft-minibosses/">Go back home</Link>
           <a href="/tic-tac-toe">Play again</a>
         </p>
       </div>,

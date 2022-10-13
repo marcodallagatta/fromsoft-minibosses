@@ -25,11 +25,11 @@ const App = () => {
       <Splashscreen content={splash} />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/memory" element={<Memory timedSetSplash={timedSetSplash} />} />
-          <Route path="/tic-tac-toe" element={<TicTacToe timedSetSplash={timedSetSplash} />} />
-          <Route path="/etch-a-sketch" element={<EtchASketch timedSetSplash={timedSetSplash} />} />
-          <Route path="/rock-paper-scissors" element={<RockPaperScissors timedSetSplash={timedSetSplash} />} />
+          <Route path="/fromsoft-minibosses/" element={<Home />} />
+          <Route path="/fromsoft-minibosses/memory" element={<Memory timedSetSplash={timedSetSplash} />} />
+          <Route path="/fromsoft-minibosses/tic-tac-toe" element={<TicTacToe timedSetSplash={timedSetSplash} />} />
+          <Route path="/fromsoft-minibosses/etch-a-sketch" element={<EtchASketch timedSetSplash={timedSetSplash} />} />
+          <Route path="/fromsoft-minibosses/rock-paper-scissors" element={<RockPaperScissors timedSetSplash={timedSetSplash} />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
