@@ -67,7 +67,7 @@ const EtchASketch = (props) => {
             <br />
             Just lie straight to his face and tell him that this is the game!
             <br />
-            Gascoigne would not approve, but look how <em>his</em> daughter ended up.
+            Just be sure to play this with a mouse, you <em>beast</em>.
           </p>
         </div>
 
