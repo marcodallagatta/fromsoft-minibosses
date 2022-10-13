@@ -2,6 +2,7 @@ import rps from "../games/rock-paper-scissors/pictures/rules.png";
 import etch from "../styling/UI/etch-preview.png";
 import ttt from "../styling/UI/ttt-preview.png";
 import mem from "../styling/UI/memory-preview.png";
+import { Link } from "react-router-dom";
 
 const Home = (props) => {
   return (
@@ -28,18 +29,18 @@ const Home = (props) => {
         Get ready, these won't be children's games! <em>(sort of)</em>
       </p>
       <div className="home-links">
-        <a href="rock-paper-scissors">
+        <Link to="rock-paper-scissors">
           <img src={rps} alt="Rock Paper Scissors" />
-        </a>
-        <a href="memory">
+        </Link>
+        <Link to="memory">
           <img src={mem} alt="Memory" />
-        </a>
-        <a href="etch-a-sketch">
+        </Link>
+        <Link to="etch-a-sketch">
           <img src={etch} alt="Etch A Sketch" />
-        </a>
-        <a href="tic-tac-toe">
+        </Link>
+        <Link to="tic-tac-toe">
           <img src={ttt} alt="Tic Tac Toe" />
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 {
-  "name": "from-soft-games",
-  "version": "0.1.0",
-  "homepage": "https://marcodallagatta.github.io/fromsoft-minibosses/",
+  "name": "fromsoft-minibosses",
+  "version": "1.0.0",
+  "homepage": "https://marcodallagatta.github.io/fromsoft-minibosses",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",

@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Memory from "./games/memory/Memory";
 import TicTacToe from "./games/tic-tac-toe/TicTacToe";
@@ -7,7 +7,7 @@ import RockPaperScissors from "./games/rock-paper-scissors/RockPaperScissors";
 
 const RouteSwitch = (props) => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/memory" element={<Memory timedSetSplash={props.timedSetSplash} />} />
@@ -15,7 +15,7 @@ const RouteSwitch = (props) => {
         <Route path="/etch-a-sketch" element={<EtchASketch timedSetSplash={props.timedSetSplash} />} />
         <Route path="/rock-paper-scissors" element={<RockPaperScissors timedSetSplash={props.timedSetSplash} />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
