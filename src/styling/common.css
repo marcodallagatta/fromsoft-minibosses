@@ -1,0 +1,388 @@
+@font-face {
+  font-family: "OptimusPrinceps";
+  src: url("OptimusPrinceps.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OptimusPrinceps";
+  src: url("OptimusPrincepsSemiBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EBGaramond";
+  src: url("EBGaramond-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* * {
+  outline: 1px solid red;
+} */
+
+body {
+  font-family: "EBGaramond", serif;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  /* background-image: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.4) 10%,
+      rgba(0, 0, 0, 0) 20%),
+    url("./UI/tobias-tullius-RhjVGxILcqE-unsplash.jpg"); */
+  /* background-size: cover; */
+  color: white;
+  overscroll-behavior: none;
+}
+
+input {
+  font-family: "EBGaramond", serif;
+  outline: none;
+  font-size: 0.8em;
+  font-weight: bold;
+  letter-spacing: .2em;
+}
+
+button {
+  font-family: "EBGaramond", serif;
+  font-size: 1.2em;
+}
+
+.App {
+  background-image: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.4) 10%,
+      rgba(0, 0, 0, 0) 20%),
+    url("./UI/tobias-tullius-RhjVGxILcqE-unsplash.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.App:has(.RockPaperScissors) {
+  background-image: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      #00000066 10%,
+      rgba(0, 0, 0, 0) 20%),
+    url("./UI/elden.jpg");
+}
+
+.App:has(.EtchASketch) {
+  background-image: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      #00000066 10%,
+      rgba(0, 0, 0, 0) 20%),
+    url("./UI/bloodborne.jpg");
+}
+
+.App:has(.TicTacToe) {
+  background-image: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      #00000066 10%,
+      rgba(0, 0, 0, 0) 20%),
+    url("./UI/ds.jpg");
+}
+
+.App:has(.Memory) {
+  background-image: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      #00000066 10%,
+      rgba(0, 0, 0, 0) 20%),
+    url("./UI/sekiro.jpg");
+}
+
+.Nav {
+  background-color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  display: flex;
+  align-items: center;
+  color: white;
+  z-index: 1;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.Nav .back-home {
+  margin-left: 1em;
+  margin-right: auto;
+}
+
+.Nav .back-home img {
+  width: 20px;
+  filter: invert(1);
+}
+
+.Nav .nav-title {
+  margin-left: -1em;
+  margin-right: auto;
+}
+
+.Nav p {
+  margin: 15px 0;
+}
+
+.Footer {
+  width: 100%;
+  margin-top: auto;
+  color: white;
+  padding: 10px 0;
+  font-size: 0.8em;
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.5) 40%,
+      rgba(0, 0, 0, 1) 100%);
+}
+
+.Footer a,
+.Footer p {
+  color: #aeae85;
+  line-height: 1.5em;
+  text-underline-offset: 5px;
+}
+
+.Footer p {
+  padding: 0 10px;
+}
+
+.Splashscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.splashscreen-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.Splashscreen.fullscreen {
+  background: black;
+  color: white;
+}
+
+.Splashscreen.fullscreen a {
+  color: rgb(116, 116, 116);
+  display: block;
+  font-size: .8em;
+  line-height: 1.4em;
+  text-underline-offset: 2px;
+  font-style: italic;
+  margin: 0;
+}
+
+.Splashscreen.popup {
+  color: black;
+  opacity: 1;
+  background: linear-gradient(0deg,
+      rgba(255, 255, 255, 0) 25%,
+      rgba(255, 255, 255, 0.8) 40%,
+      rgba(255, 255, 255, 0.9) 45%,
+      rgba(255, 255, 255, 0.9) 55%,
+      rgba(255, 255, 255, 0.8) 60%,
+      rgba(255, 255, 255, 0) 75%);
+}
+
+.Splashscreen.popup p {
+  line-height: 1.3em;
+}
+
+.Splashscreen.popup h2+p {
+  margin-top: -1em;
+}
+
+.Splashscreen h3,
+.Splashscreen .won,
+.Splashscreen .tied,
+.Splashscreen .lost {
+  font-family: EBGaramond, serif;
+  font-size: 3em;
+  position: relative;
+}
+
+.Splashscreen h3::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  width: 120%;
+  left: -10%;
+  height: 3px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 15%,
+      rgba(255, 255, 255, 0.85) 25%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 0.8550770650056898) 75%,
+      rgba(255, 255, 255, 1) 85%,
+      rgba(255, 255, 255, 0) 100%);
+}
+
+.Splashscreen .won {
+  color: #074f00;
+  margin-bottom: 0;
+}
+
+.Splashscreen .tied {
+  margin-bottom: 0;
+}
+
+.Splashscreen .lost {
+  color: #4f0009;
+  margin-bottom: 0;
+}
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home .title {
+  background-image: url("/src/styling/UI/goldtexture.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  margin-top: 1em;
+}
+
+h1,
+.shadow-title p {
+  font-family: "OptimusPrinceps", serif;
+  font-weight: bold;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+h1 .from-soft,
+.shadow-title p .from-soft {
+  font-size: 1.6em;
+}
+
+.shadow-title p {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: -20px;
+  left: 0;
+  z-index: -1;
+  color: transparent;
+  background-image: none;
+}
+
+.home-description {
+  line-height: 1.4em;
+  margin: 0;
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: 40px;
+  padding: 10px 30px;
+  position: relative;
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, .3) 10%,
+      rgba(0, 0, 0, .6) 20%,
+      rgba(0, 0, 0, .6) 80%,
+      rgba(0, 0, 0, .3) 90%,
+      rgba(0, 0, 0, 0) 100%);
+}
+
+.home-description::before,
+.home-description::after {
+  content: "";
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+  border-top: 1px solid rgba(225, 152, 42, .6);
+  position: absolute;
+  left: 0;
+}
+
+.home-description::before {
+  top: -10px;
+}
+
+.home-description::after {
+  bottom: 0px;
+}
+
+.Home .home-links {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.Home .home-links img {
+  max-width: 150px;
+}
+
+
+.explanation {
+  text-align: center;
+  color: white;
+  background: #808060;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.4em;
+  margin: 40px 0 0 0;
+  text-shadow: 1px 1px 2px black;
+  padding: 10px 60px;
+  position: relative;
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, .4) 10%,
+      rgba(0, 0, 0, .7) 20%,
+      rgba(0, 0, 0, .7) 80%,
+      rgba(0, 0, 0, .4) 90%,
+      rgba(0, 0, 0, 0) 100%);
+}
+
+.explanation::before,
+.explanation::after {
+  content: "";
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+  border-top: 1px solid rgba(225, 152, 42, .5);
+  position: absolute;
+  left: 0;
+}
+
+.explanation::before {
+  top: -10px;
+}
+
+.explanation::after {
+  bottom: 0px;
+}
+
+.explanation img {
+  max-width: 200px;
+}
+
+
+.Memory,
+.EtchASketch,
+.TicTacToe,
+.RockPaperScissors {
+  max-width: 800px;
+  margin: 0 auto;
+}

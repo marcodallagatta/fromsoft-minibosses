@@ -1,0 +1,123 @@
+.EtchASketch #grid {
+  width: min(90%, 400px);
+  margin: 30px auto;
+  display: grid;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 5px black;
+}
+
+.EtchASketch #grid div {
+  aspect-ratio: 1;
+  margin: -1px 0 0 -1px;
+  border: 1px solid rgba(171, 178, 186, 0.5);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 500px;
+  margin: 20px auto 0 auto;
+}
+
+.resetButton,
+.newGridButton {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  overflow: hidden;
+  transition: 0.5s;
+  border-radius: 8px;
+}
+
+.newGridButton {
+  width: 96px;
+  height: 46px;
+  outline: 2px solid #000;
+}
+
+.resetButton button,
+.newGridButton button {
+  font-family: "EBGaramond", serif;
+  width: 101%;
+  height: 100%;
+  font-size: 0.75em;
+  background: #000;
+  -webkit-mask: url("./UI/urban-sprite.png");
+  mask: url("./UI/urban-sprite.png");
+  -webkit-mask-size: 3000% 100%;
+  mask-size: 3000% 100%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(29) forwards;
+  animation: ani2 0.7s steps(29) forwards;
+}
+
+.newGridButton button {
+  -webkit-mask: url("./UI/natureSmaller.png");
+  mask: url("./UI/natureSmaller.png");
+  -webkit-mask-size: 7100% 100%;
+  mask-size: 7100% 100%;
+  -webkit-animation: ani2 0.7s steps(70) forwards;
+  animation: ani2 0.7s steps(70) forwards;
+}
+
+.resetButton button:hover {
+  -webkit-animation: ani 0.7s steps(29) forwards;
+  animation: ani 0.7s steps(29) forwards;
+}
+
+.newGridButton button:hover {
+  -webkit-animation: ani 0.7s steps(70) forwards;
+  animation: ani 0.7s steps(70) forwards;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}

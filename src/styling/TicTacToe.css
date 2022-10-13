@@ -1,0 +1,166 @@
+.TicTacToe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.TicTacToe .gameboard {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.TicTacToe .cell {
+  outline: 1px solid #c4f2f2;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  position: relative;
+}
+
+.TicTacToe .cell::before {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.TicTacToe .cell:nth-child(1)::before {
+  content: "1";
+}
+
+.TicTacToe .cell:nth-child(2)::before {
+  content: "2";
+}
+
+.TicTacToe .cell:nth-child(3)::before {
+  content: "3";
+}
+
+.TicTacToe .cell:nth-child(4)::before {
+  content: "4";
+}
+
+.TicTacToe .cell:nth-child(5)::before {
+  content: "5";
+}
+
+.TicTacToe .cell:nth-child(6)::before {
+  content: "6";
+}
+
+.TicTacToe .cell:nth-child(7)::before {
+  content: "7";
+}
+
+.TicTacToe .cell:nth-child(8)::before {
+  content: "8";
+}
+
+.TicTacToe .cell:nth-child(9)::before {
+  content: "9";
+}
+
+.tictactoeSplash #turns {
+  width: 100%;
+}
+
+.tictactoeSplash h2 {
+  max-width: 400px;
+  line-height: 1.5em;
+}
+
+.tictactoeSplash .playerSign img {
+  width: 30px;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.tictactoeSplash img.selected,
+.tictactoeSplash img.selected:hover {
+  outline: 2px solid rgb(157, 157, 157);
+}
+
+.tictactoeSplash img:hover {
+  outline: 2px solid rgb(85, 85, 85);
+}
+
+.tictactoeSplash form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.tictactoeSplash .playerdata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.turns input[type=number],
+.turns input::-webkit-outer-spin-button,
+.turns input::-webkit-inner-spin-button {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.tictactoeSplash input {
+  background: black;
+  border: 0;
+  color: white;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 15%,
+      rgba(255, 255, 255, 0.85) 25%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 0.8550770650056898) 75%,
+      rgba(255, 255, 255, 1) 85%,
+      rgba(255, 255, 255, 0) 100%);
+  border-image-slice: 1;
+}
+
+.tictactoeSplash input:focus {
+  outline: none;
+}
+
+.tictactoeSplash .playerSign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.tictactoeSplash button,
+.TicTacToe button {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-top: 30px;
+  transition: all .2s ease-in-out;
+}
+
+.tictactoeSplash button:hover {
+  background-color: white;
+  color: black;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.TicTacToe .cell img {
+  width: 50px;
+}

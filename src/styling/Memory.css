@@ -1,0 +1,32 @@
+.Memory .Deck {
+  max-width: 90%;
+  margin: 50px auto 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.Memory .Card {
+  padding: 5px;
+  cursor: pointer;
+  background-image: url(../games/memory/card-texture.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: all .1s ease-in-out;
+  aspect-ratio: 1;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Memory .Card:hover {
+  transform: scale(1.15);
+}
+
+
+.Memory .Card img {
+  max-width: 75%;
+}

@@ -1,0 +1,125 @@
+.RockPaperScissors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.RockPaperScissors #cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 30px;
+}
+
+@media (max-width:600px) {
+  .RockPaperScissors #cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .RockPaperScissors .rock,
+  .RockPaperScissors .scissors,
+  .RockPaperScissors .paper {
+    width: 80%;
+    height: auto;
+    padding: 0;
+  }
+}
+
+.RockPaperScissors .rock {
+  height: 160px;
+  padding-top: 20px;
+}
+
+.RockPaperScissors .scissors {
+  height: 180px;
+  padding-top: 10px;
+}
+
+.RockPaperScissors #cards img {
+  transition: all 0.1s ease-in-out;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 600px) {
+
+  .RockPaperScissors .rock,
+  .RockPaperScissors .scissors,
+  .RockPaperScissors .paper {
+    width: 20%;
+    height: auto;
+    padding: 0;
+  }
+}
+
+.RockPaperScissors .enemychoice {
+  filter: drop-shadow(0 5px 30px #be6048);
+}
+
+.RockPaperScissors .mychoice {
+  filter: drop-shadow(0 5px 30px #faba29);
+}
+
+.RockPaperScissors .samechoice {
+  filter: drop-shadow(0 5px 30px #9eb6a7);
+}
+
+@keyframes card-pulse {
+
+  0%,
+  10%,
+  90%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes card-zoom-in {
+
+  0%,
+  10% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes card-zoom-out {
+
+  0%,
+  10% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.RockPaperScissors .result {
+  text-align: center;
+  padding: 25px 10px 60px 10px;
+  color: white;
+}
+
+.RockPaperScissors .loseMessage {
+  color: #be6048;
+  font-weight: bold;
+}
+
+.RockPaperScissors .winMessage {
+  color: #faba29;
+  font-weight: bold;
+}
+
+.RockPaperScissors .tieMessage {
+  color: #9eb6a7;
+  font-weight: bold;
+}
