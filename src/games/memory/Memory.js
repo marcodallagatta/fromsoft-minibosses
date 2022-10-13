@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import Nav from "../../components/Nav";
 import Deck from "./components/Deck";
 import { useEffect, useState, useRef } from "react";

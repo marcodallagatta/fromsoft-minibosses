@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import Card from "./Card";
 import guardianApe from "../pictures/guardian-ape.png";

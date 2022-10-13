@@ -1,6 +1,4 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef, useState } from "react";
-import { BrowserRouter, Link } from "react-router-dom";
 import Nav from "../../components/Nav";
 import bloodred from "./pictures/bloodred.png";
 import bone from "./pictures/bone.png";

@@ -8,15 +8,11 @@ export default function Footer() {
         </a>
         . You can check out the code on{" "}
         <a href="https://github.com/marcodallagatta/fromsoft-minibosses" target="blank">
-          Github
+          Github{" "}
         </a>
-        , follow me on{" "}
-        <a href="https://twitter.com/marcodallagatta" target="blank">
-          Twitter
-        </a>{" "}
-        or{" "}
+        and reach out to me on{" "}
         <a href="https://www.linkedin.com/in/marco-dalla-gatta" target="blank">
-          Linkedin
+          Linkedin{" "}
         </a>
         .
         <br />
