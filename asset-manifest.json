@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fromsoft-minibosses/static/css/main.d1b79e6a.css",
-    "main.js": "/fromsoft-minibosses/static/js/main.dc050307.js",
+    "main.js": "/fromsoft-minibosses/static/js/main.cb24acd3.js",
     "static/media/tobias-tullius-RhjVGxILcqE-unsplash.jpg": "/fromsoft-minibosses/static/media/tobias-tullius-RhjVGxILcqE-unsplash.a04c07c64417d7872a40.jpg",
     "static/media/urban-sprite.png": "/fromsoft-minibosses/static/media/urban-sprite.cdecf8f93039c2ff79c1.png",
     "static/media/EBGaramond-Regular.ttf": "/fromsoft-minibosses/static/media/EBGaramond-Regular.d7ae3de766c4194a8698.ttf",
@@ -37,10 +37,10 @@
     "index.html": "/fromsoft-minibosses/index.html",
     "static/media/caret-left.svg": "/fromsoft-minibosses/static/media/caret-left.f3233daf50520a9b62350b307b470d2f.svg",
     "main.d1b79e6a.css.map": "/fromsoft-minibosses/static/css/main.d1b79e6a.css.map",
-    "main.dc050307.js.map": "/fromsoft-minibosses/static/js/main.dc050307.js.map"
+    "main.cb24acd3.js.map": "/fromsoft-minibosses/static/js/main.cb24acd3.js.map"
   },
   "entrypoints": [
     "static/css/main.d1b79e6a.css",
-    "static/js/main.dc050307.js"
+    "static/js/main.cb24acd3.js"
   ]
 }
