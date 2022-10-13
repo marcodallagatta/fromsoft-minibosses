@@ -139,8 +139,7 @@ export default function RockPaperScissor(props) {
         <>
           <h2 className="tied">GAME TIED</h2>
           <p>
-            <Link to="/fromsoft-minibosses/">Go back home</Link>
-            <Link to="/fromsoft-minibosses/rock-paper-scissors">Play again</Link>
+            <a href="/fromsoft-minibosses/">Go back home</a>
           </p>
         </>,
         "forever",
@@ -151,8 +150,7 @@ export default function RockPaperScissor(props) {
         <>
           <h2 className="won">YOU WON</h2>
           <p>
-            <Link to="/fromsoft-minibosses/">Go back home</Link>
-            <Link to="/fromsoft-minibosses/rock-paper-scissors">Play again</Link>
+            <a href="/fromsoft-minibosses/">Go back home</a>
           </p>
         </>,
         "forever",
@@ -163,8 +161,7 @@ export default function RockPaperScissor(props) {
         <>
           <h2 className="lost">YOU DIED</h2>
           <p>
-            <Link to="/fromsoft-minibosses/">Go back home</Link>
-            <Link to="/fromsoft-minibosses/rock-paper-scissors">Play again</Link>
+            <a href="/fromsoft-minibosses/">Go back home</a>
           </p>
         </>,
         "forever",

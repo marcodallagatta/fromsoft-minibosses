@@ -119,8 +119,7 @@ export default function Deck(props) {
       <>
         <h2 className="lost">YOU DIED</h2>
         <p>
-          <Link to="/fromsoft-minibosses/">Go back home</Link>
-          <Link to="/fromsoft-minibosses/memory">Play again</Link>
+          <a href="/fromsoft-minibosses/">Go back home</a>
         </p>
       </>,
       "forever",
@@ -133,8 +132,7 @@ export default function Deck(props) {
       <>
         <h2 className="won">YOU WON</h2>
         <p>
-          <Link to="/fromsoft-minibosses/">Go back home</Link>
-          <Link to="/fromsoft-minibosses/memory">Play again</Link>
+          <a href="/fromsoft-minibosses/">Go back home</a>
         </p>
       </>,
       "forever",

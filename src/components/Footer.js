@@ -7,10 +7,7 @@ export default function Footer() {
           @marcodallagatta
         </a>
         . You can check out the code on{" "}
-        <a
-          href="https://github.com/marcodallagatta/elden-rock-paper-scissors"
-          target="blank"
-        >
+        <a href="https://github.com/marcodallagatta/fromsoft-minibosses" target="blank">
           Github
         </a>
         , follow me on{" "}
