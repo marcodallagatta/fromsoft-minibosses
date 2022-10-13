@@ -177,6 +177,7 @@ export default function RockPaperScissor(props) {
   useEffect(() => {
     if (firstRender.current) {
       document.title = "Bleed Comet Mimic";
+      window.scrollTo(0, 0);
       props.timedSetSplash(
         <>
           <h3>Bleed Comet Mimic</h3>

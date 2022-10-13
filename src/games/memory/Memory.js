@@ -14,6 +14,7 @@ export default function Memory(props) {
   useEffect(() => {
     if (firstRender.current) {
       document.title = "Idol's Riddle";
+      window.scrollTo(0, 0);
       props.timedSetSplash(
         <>
           <h3>Idol's Riddle</h3>

@@ -218,6 +218,7 @@ const TicTacToe = (props) => {
   useEffect(() => {
     if (firstRender.current) {
       document.title = "Pin Bell Gwyn";
+      window.scrollTo(0, 0);
       props.timedSetSplash(
         <>
           <h3>Pin Bell Gwyn</h3>

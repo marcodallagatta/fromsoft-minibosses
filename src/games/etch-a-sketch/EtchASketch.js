@@ -44,6 +44,7 @@ const EtchASketch = (props) => {
   useEffect(() => {
     if (firstRender.current) {
       firstRender.current = false;
+      window.scrollTo(0, 0);
       document.title = "Etch a Beast";
       props.timedSetSplash(
         <>
