@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Card from "./Card";
 import guardianApe from "../pictures/guardian-ape.png";
 import gyoubu from "../pictures/gyoubu-oniwa.png";
@@ -118,8 +119,8 @@ export default function Deck(props) {
       <>
         <h2 className="lost">YOU DIED</h2>
         <p>
-          <a href="/">Go back home</a>
-          <a href="/memory">Play again</a>
+          <Link to="/">Go back home</Link>
+          <Link to="/memory">Play again</Link>
         </p>
       </>,
       "forever",
@@ -132,8 +133,8 @@ export default function Deck(props) {
       <>
         <h2 className="won">YOU WON</h2>
         <p>
-          <a href="/">Go back home</a>
-          <a href="/memory">Play again</a>
+          <Link to="/">Go back home</Link>
+          <Link to="/memory">Play again</Link>
         </p>
       </>,
       "forever",

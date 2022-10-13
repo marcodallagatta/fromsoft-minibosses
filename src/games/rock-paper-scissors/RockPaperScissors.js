@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Nav from "../../components/Nav";
 import Seppuku from "./pictures/seppuku.png";
 import Comet from "./pictures/comet.png";
@@ -138,8 +139,8 @@ export default function RockPaperScissor(props) {
         <>
           <h2 className="tied">GAME TIED</h2>
           <p>
-            <a href="/">Go back home</a>
-            <a href="/rock-paper-scissors">Play again</a>
+            <Link to="/">Go back home</Link>
+            <Link to="/rock-paper-scissors">Play again</Link>
           </p>
         </>,
         "forever",
@@ -150,8 +151,8 @@ export default function RockPaperScissor(props) {
         <>
           <h2 className="won">YOU WON</h2>
           <p>
-            <a href="/">Go back home</a>
-            <a href="/rock-paper-scissors">Play again</a>
+            <Link to="/">Go back home</Link>
+            <Link to="/rock-paper-scissors">Play again</Link>
           </p>
         </>,
         "forever",
@@ -162,8 +163,8 @@ export default function RockPaperScissor(props) {
         <>
           <h2 className="lost">YOU DIED</h2>
           <p>
-            <a href="/">Go back home</a>
-            <a href="/rock-paper-scissors">Play again</a>
+            <Link to="/">Go back home</Link>
+            <Link to="/rock-paper-scissors">Play again</Link>
           </p>
         </>,
         "forever",

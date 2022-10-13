@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import Nav from "../../components/Nav";
 import bloodred from "./pictures/bloodred.png";
 import bone from "./pictures/bone.png";
@@ -256,7 +257,7 @@ const TicTacToe = (props) => {
       <div className="tictactoeSplash">
         <h2>{whoWon()}</h2>
         <p>
-          <a href="/">Go back home</a>
+          <Link to="/">Go back home</Link>
           <a href="/tic-tac-toe">Play again</a>
         </p>
       </div>,
