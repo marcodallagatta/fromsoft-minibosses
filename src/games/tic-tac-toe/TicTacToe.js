@@ -11,7 +11,6 @@ import purple from "./pictures/purple.png";
 
 const TicTacToe = (props) => {
   const boardDOM = useRef(null);
-  const turnDOM = useRef(null);
   const turnsInputDOM = useRef(null);
   const formButtonDOM = useRef(null);
   const player1nameDOM = useRef();
@@ -76,13 +75,17 @@ const TicTacToe = (props) => {
   const addPoint = (winner) => {
     setPlayers((prev) => {
       const temp = [...prev];
-      temp[winner].points += 0.5;
+      temp[winner].points += 1;
       return temp;
     });
   };
 
   const isThereWinner = () => {
     if (turnWon) return;
+    if (gameboard.every((cell) => cell !== "") && !turnWon) {
+      // if the whole cell is filled without a winner it's a tie
+      playerWon(2);
+    }
     solutions.forEach((sol) => {
       if (
         // some winning cells combinations are not filled
@@ -119,16 +122,12 @@ const TicTacToe = (props) => {
           }, 1000);
         }
         setTurnWon(true);
-        const winner = signCheck === players[0].sign ? 0 : 1;
+        let winner = signCheck === players[0].sign ? 0 : 1;
         addPoint(winner);
         playerWon(winner, sol);
         return;
       }
     });
-    if (gameboard.join("").length === 9 && !turnWon) {
-      // if the whole cell is filled without a winner it's a tie
-      playerWon(2);
-    }
   };
 
   const playerWon = (player, winningCells = "") => {
@@ -140,9 +139,23 @@ const TicTacToe = (props) => {
       });
       return;
     } else {
-      // tie
-      boardDOM.current.style.backgroundColor = "black";
-      turnDOM.current.innerText = "It's a tie!";
+      // turn ends in a tie
+      setTimeout(() => {
+        if (turns > 1)
+          props.timedSetSplash(
+            <>
+              <h2>
+                {turns - 1} {turns - 1 > 1 ? "turns" : "turn"} left
+              </h2>
+              <p>
+                {players[0].name}: {players[0].points} points / {players[1].name}: {players[1].points} points
+              </p>
+            </>,
+            2000,
+            "popup"
+          );
+        nextGameTurn();
+      }, 1000);
     }
   };
 
@@ -246,7 +259,7 @@ const TicTacToe = (props) => {
 
   const whoWon = () => {
     const scores = players.map((pl) => pl.points);
-    if (scores[0] === scores[1]) return "Oops! It's a tie!";
+    if (scores[0] === scores[1]) return "It's a tie!";
     const wonIndex = scores.indexOf(Math.max(...scores));
     return `${players[wonIndex].name} won!`;
   };
@@ -291,7 +304,6 @@ const TicTacToe = (props) => {
         <div className="gameboard" ref={boardDOM}>
           {cellsMap}
         </div>
-        <div className="turn" ref={turnDOM}></div>
       </div>
     </>
   );

@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
 import Nav from "../../components/Nav";
 import Seppuku from "./pictures/seppuku.png";
 import Comet from "./pictures/comet.png";

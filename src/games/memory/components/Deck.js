@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import Card from "./Card";
 import guardianApe from "../pictures/guardian-ape.png";
 import gyoubu from "../pictures/gyoubu-oniwa.png";
