@@ -23,7 +23,7 @@ const App = () => {
   return (
     <div className="App">
       <Splashscreen content={splash} />
-      <BrowserRouter>
+      <BrowserRouter basename="/fromsoft-minibosses">
         <Routes>
           <Route path="/fromsoft-minibosses/" element={<Home />} />
           <Route path="/fromsoft-minibosses/memory" element={<Memory timedSetSplash={timedSetSplash} />} />
