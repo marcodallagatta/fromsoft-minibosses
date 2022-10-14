@@ -8,18 +8,13 @@ const Home = (props) => {
   return (
     <div className="Home">
       <div className="title">
-        <h1>
-          <span className="from-soft">From Soft</span>
-          <br />
-          Minibosses
-        </h1>
-        <div className="shadow-title">
-          <p>
+        <h1 className="gradient-shadow">
+          <div>
             <span className="from-soft">From Soft</span>
             <br />
             Minibosses
-          </p>
-        </div>
+          </div>
+        </h1>
       </div>
       <p className="home-description">
         Are you ready to face your biggest challenge yet?

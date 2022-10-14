@@ -255,34 +255,23 @@ button {
 
 .Home .title {
   background-image: url("/src/styling/UI/goldtexture.jpg");
-  background-clip: text;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-filter: drop-shadow(2px 2px #333);
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 1));
   color: transparent;
-  position: relative;
   margin-top: 1em;
 }
 
-h1,
-.shadow-title p {
+.Home .title h1 {
   font-family: "OptimusPrinceps", serif;
   font-weight: bold;
   font-size: 3em;
   line-height: 1em;
 }
 
-h1 .from-soft,
-.shadow-title p .from-soft {
+.Home .title h1 .from-soft {
   font-size: 1.6em;
-}
-
-.shadow-title p {
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-  position: absolute;
-  top: -20px;
-  left: 0;
-  z-index: -1;
-  color: transparent;
-  background-image: none;
 }
 
 .home-description {
