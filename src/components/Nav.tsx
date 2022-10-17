@@ -1,7 +1,6 @@
 import LeftArrow from "../styling/UI/caret-left.svg";
-import { Link } from "react-router-dom";
 
-function Nav(props) {
+function Nav(props: { title: string }) {
   return (
     <div className="Nav">
       <div className="back-home">
