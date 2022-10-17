@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import Nav from "../../components/Nav";
+import Nav from "../../components/Nav.tsx";
 import Seppuku from "./pictures/seppuku.png";
 import Comet from "./pictures/comet.png";
 import Mimic from "./pictures/mimic.png";
@@ -141,7 +141,7 @@ export default function RockPaperScissor(props) {
             <a href="/fromsoft-minibosses/">Go back home</a>
           </p>
         </>,
-        "forever",
+        9999,
         "fullscreen"
       );
     } else if (turnsWon > turnsLost) {
@@ -152,7 +152,7 @@ export default function RockPaperScissor(props) {
             <a href="/fromsoft-minibosses/">Go back home</a>
           </p>
         </>,
-        "forever",
+        9999,
         "fullscreen"
       );
     } else {
@@ -163,7 +163,7 @@ export default function RockPaperScissor(props) {
             <a href="/fromsoft-minibosses/">Go back home</a>
           </p>
         </>,
-        "forever",
+        9999,
         "fullscreen"
       );
     }

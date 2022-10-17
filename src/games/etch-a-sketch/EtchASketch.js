@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import Cell from "./Cell";
-import Nav from "../../components/Nav";
+import Nav from "../../components/Nav.tsx";
 
 const EtchASketch = (props) => {
   const firstRender = useRef(true);

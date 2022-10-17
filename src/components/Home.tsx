@@ -4,7 +4,7 @@ import ttt from "../styling/UI/ttt-preview.png";
 import mem from "../styling/UI/memory-preview.png";
 import { Link } from "react-router-dom";
 
-const Home = (props) => {
+const Home = () => {
   return (
     <div className="Home">
       <div className="title">

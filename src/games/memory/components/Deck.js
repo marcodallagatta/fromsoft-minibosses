@@ -120,7 +120,7 @@ export default function Deck(props) {
           <a href="/fromsoft-minibosses/">Go back home</a>
         </p>
       </>,
-      "forever",
+      9999,
       "fullscreen"
     );
   };
@@ -133,7 +133,7 @@ export default function Deck(props) {
           <a href="/fromsoft-minibosses/">Go back home</a>
         </p>
       </>,
-      "forever",
+      9999,
       "fullscreen"
     );
   };

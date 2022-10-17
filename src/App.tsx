@@ -1,22 +1,22 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import RouteSwitch from "./RouteSwitch";
 import Home from "./components/Home";
-import Memory from "./games/memory/Memory";
-import TicTacToe from "./games/tic-tac-toe/TicTacToe";
-import EtchASketch from "./games/etch-a-sketch/EtchASketch";
-import RockPaperScissors from "./games/rock-paper-scissors/RockPaperScissors";
+import Memory from "./games/memory/Memory.js";
+import TicTacToe from "./games/tic-tac-toe/TicTacToe.js";
+import EtchASketch from "./games/etch-a-sketch/EtchASketch.js";
+import RockPaperScissors from "./games/rock-paper-scissors/RockPaperScissors.js";
 import Splashscreen from "./components/Splashscreen";
 import Footer from "./components/Footer";
 
 const App = () => {
-  const [splash, setSplash] = useState(<div className="Splashscreen splashscreen-hidden"></div>);
+  const [splash, setSplash] = useState<JSX.Element>(<div className="Splashscreen splashscreen-hidden"></div>);
 
   // either use type of 'fullscreen' or 'popup'
-  const timedSetSplash = (content, msLength, type = "") => {
+  const timedSetSplash = (content: string, msLength: number, type: string = "") => {
     const newSplash = <div className={`Splashscreen ${type}`}>{content}</div>;
     setSplash(newSplash);
-    if (msLength === "forever") return;
+    if (msLength === 9999) return;
     setTimeout(() => setSplash(<div className="Splashscreen splashscreen-hidden"></div>), msLength);
   };
 

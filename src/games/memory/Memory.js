@@ -1,4 +1,4 @@
-import Nav from "../../components/Nav";
+import Nav from "../../components/Nav.tsx";
 import Deck from "./components/Deck";
 import { useEffect, useState, useRef } from "react";
 

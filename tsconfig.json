@@ -6,6 +6,17 @@
   "compilerOptions": {
     "target": "es2016",
     "jsx": "react-jsx",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    // "strictNullChecks": true,
+    // "noImplicitThis": true,
+    // "alwaysStrict": true,
+    // "strict": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noImplicitReturns": true,
+    // "noFallthroughCasesInSwitch": true
   }
 }

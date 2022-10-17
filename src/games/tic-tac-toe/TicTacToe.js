@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import Nav from "../../components/Nav";
+import Nav from "../../components/Nav.tsx";
 import bloodred from "./pictures/bloodred.png";
 import bone from "./pictures/bone.png";
 import estus from "./pictures/estus.png";
@@ -238,7 +238,7 @@ const TicTacToe = (props) => {
         "fullscreen"
       );
       setTimeout(() => {
-        props.timedSetSplash(splashChoosePlayerElement, "forever", "fullscreen");
+        props.timedSetSplash(splashChoosePlayerElement, 9999, "fullscreen");
       }, 2000);
     }
   }, []);
@@ -272,7 +272,7 @@ const TicTacToe = (props) => {
           <a href="/fromsoft-minibosses/">Go back home</a>
         </p>
       </div>,
-      "forever",
+      9999,
       "fullscreen"
     );
   }, [turns]);
